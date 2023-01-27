@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #282827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cronometer-container {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.cronometer__display {
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cronometer__controller {
+    display:flex;
+    justify-content: center;
+}
+
+.cronometer__controller_button {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #3b3b3b;
+    color: aliceblue;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cronometer__controller_button:disabled {
+    background-color: #1e1e1e !important;
+}
+
+#btn-start:hover {
+    background-color: rgb(19, 85, 54);
+}
+
+#btn-stop:hover {
+    background-color: rgb(85, 78, 19);
+}
+
+#btn-restart:hover {
+    background-color: rgb(85, 19, 28);
+}
+
